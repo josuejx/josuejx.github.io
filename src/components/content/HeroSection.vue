@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-    <div class="hero bg-base-200">
+    <div class="hero bg-base-200 mt-10 rounded-lg">
         <div class="hero-content flex-col lg:flex-row">
             <img src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp"
                 class="max-w-sm rounded-lg shadow-2xl" />

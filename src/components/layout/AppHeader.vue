@@ -1,4 +1,6 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import ThemeToggle from '../global/ThemeToggle.vue';
+</script>
 
 <template>
     <div class="navbar bg-base-100 shadow-sm">
@@ -27,6 +29,7 @@
             <a class="btn btn-ghost text-xl">JGA</a>
         </div>
         <div class="navbar-end hidden lg:flex">
+            <ThemeToggle />
             <ul class="menu menu-horizontal px-1">
                 <li><a>Item 1</a></li>
                 <li>
