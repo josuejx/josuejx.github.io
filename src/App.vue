@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import HeroSection from './components/content/HeroSection.vue';
 import AppFooter from './components/layout/AppFooter.vue';
 import AppHeader from './components/layout/AppHeader.vue';
 
@@ -7,8 +8,8 @@ import AppHeader from './components/layout/AppHeader.vue';
 <template>
     <div class="min-h-screen flex flex-col">
         <AppHeader />
-        <main class="grow">
-            <h1>Hola</h1>
+        <main class="grow container mx-auto">
+            <HeroSection />
         </main>
         <AppFooter />
     </div>
