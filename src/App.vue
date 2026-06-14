@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import ExperienceSection from './components/content/ExperienceSection.vue';
 import HeroSection from './components/content/HeroSection.vue';
 import AppFooter from './components/layout/AppFooter.vue';
 import AppHeader from './components/layout/AppHeader.vue';
@@ -10,6 +11,7 @@ import AppHeader from './components/layout/AppHeader.vue';
         <AppHeader />
         <main class="grow container mx-auto">
             <HeroSection />
+            <ExperienceSection />
         </main>
         <AppFooter />
     </div>
