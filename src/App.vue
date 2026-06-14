@@ -1,9 +1,15 @@
 <script setup lang="ts">
+import AppFooter from './components/layout/AppFooter.vue';
 import AppHeader from './components/layout/AppHeader.vue';
 
 </script>
 
 <template>
-    <AppHeader />
-    <h1>Welcome to Your Vue.js App</h1>
+    <div class="min-h-screen flex flex-col">
+        <AppHeader />
+        <main class="grow">
+            <h1>Hola</h1>
+        </main>
+        <AppFooter />
+    </div>
 </template>
