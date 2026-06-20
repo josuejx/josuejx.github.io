@@ -1,4 +1,9 @@
-export const THEMES = [
+interface Theme {
+    name: string;
+    value: string;
+}
+
+export const THEMES: Theme[] = [
     { name: 'Light', value: 'light' },
     { name: 'Dark', value: 'dark' },
     { name: 'Cupcake', value: 'cupcake' },
