@@ -1,5 +1,12 @@
 <script setup lang="ts">
 import ThemeToggle from '../global/ThemeToggle.vue';
+
+const scrollToTop = () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+};
 </script>
 
 <template>
@@ -15,7 +22,7 @@ import ThemeToggle from '../global/ThemeToggle.vue';
                 </div>
                 <ul tabindex="-1"
                     class="menu menu-sm dropdown-content bg-base-100/90 backdrop-blur-lg rounded-box z-[1] mt-3 w-52 p-2 shadow-lg">
-                    <li><a href="#about">Sobre Mí</a></li>
+                    <li><a href="#" @click.prevent="scrollToTop">Sobre Mí</a></li>
                     <li><a href="#skills">Habilidades</a></li>
                     <li><a href="#experience">Experiencia</a></li>
                     <li><a href="#education">Educación</a></li>
@@ -25,7 +32,7 @@ import ThemeToggle from '../global/ThemeToggle.vue';
         </div>
         <div class="navbar-center hidden lg:flex">
             <ul class="menu menu-horizontal px-1 gap-2 font-medium">
-                <li><a href="#about" class="hover:text-primary transition-colors">Sobre Mí</a></li>
+                <li><a href="#" @click.prevent="scrollToTop" class="hover:text-primary transition-colors">Sobre Mí</a></li>
                 <li><a href="#skills" class="hover:text-primary transition-colors">Habilidades</a></li>
                 <li><a href="#experience" class="hover:text-primary transition-colors">Experiencia</a></li>
                 <li><a href="#education" class="hover:text-primary transition-colors">Educación</a></li>

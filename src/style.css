@@ -1,4 +1,5 @@
 @import "tailwindcss";
+
 @plugin "daisyui" {
   themes: all;
 }
@@ -6,4 +7,8 @@
 @theme {
   --color-jx-darkblue: #1E293B;
   --color-jx-blue: #2563EB;
+}
+
+html {
+  scroll-behavior: smooth;
 }

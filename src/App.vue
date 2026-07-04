@@ -10,12 +10,13 @@ import AppHeader from './components/layout/AppHeader.vue';
 <template>
     <div class="min-h-screen flex flex-col">
         <AppHeader />
-        <!-- Añadimos padding superior para que el header sticky no tape el contenido, y un gap generoso entre secciones -->
-        <main class="grow container mx-auto px-4 pt-28 pb-16 flex flex-col gap-32">
+        <main class="grow container mx-auto px-4 pt-12 pb-16 flex flex-col gap-16 md:gap-24">
             <HeroSection />
             <SkillsSection />
-            <ExperienceSection />
-            <EducationSection />
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
+                <ExperienceSection />
+                <EducationSection />
+            </div>
         </main>
         <AppFooter />
     </div>
